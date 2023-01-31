@@ -1,0 +1,72 @@
+{
+	"ethereum": {
+		"sendVersion": 2,
+		"receiveVersion": 2,
+		"inboundProofLibraryVersion": 1,
+		"inboundBlockConfirmations": 15,
+		"relayer": "0x902F09715B6303d4173037652FA7377e5b98089E",
+		"outboundProofType": 1,
+		"outboundBlockConfirmations": 15,
+		"oracle": "0x5a54fe5234E811466D5366846283323c954310B2"
+	},
+	"bsc": {
+		"sendVersion": 2,
+		"receiveVersion": 2,
+		"inboundProofLibraryVersion": 1,
+		"inboundBlockConfirmations": 20,
+		"relayer": "0xA27A2cA24DD28Ce14Fb5f5844b59851F03DCf182",
+		"outboundProofType": 1,
+		"outboundBlockConfirmations": 20,
+		"oracle": "0x5a54fe5234E811466D5366846283323c954310B2"
+	},
+	"avalanche": {
+		"sendVersion": 2,
+		"receiveVersion": 2,
+		"inboundProofLibraryVersion": 1,
+		"inboundBlockConfirmations": 12,
+		"relayer": "0xCD2E3622d483C7Dc855F72e5eafAdCD577ac78B4",
+		"outboundProofType": 1,
+		"outboundBlockConfirmations": 12,
+		"oracle": "0x5a54fe5234E811466D5366846283323c954310B2"
+	},
+	"polygon": {
+		"sendVersion": 2,
+		"receiveVersion": 2,
+		"inboundProofLibraryVersion": 1,
+		"inboundBlockConfirmations": 512,
+		"relayer": "0x75dC8e5F50C8221a82CA6aF64aF811caA983B65f",
+		"outboundProofType": 1,
+		"outboundBlockConfirmations": 512,
+		"oracle": "0x5a54fe5234E811466D5366846283323c954310B2"
+	},
+	"arbitrum": {
+		"sendVersion": 2,
+		"receiveVersion": 2,
+		"inboundProofLibraryVersion": 1,
+		"inboundBlockConfirmations": 20,
+		"relayer": "0x177d36dBE2271A4DdB2Ad8304d82628eb921d790",
+		"outboundProofType": 1,
+		"outboundBlockConfirmations": 20,
+		"oracle": "0xA0Cc33Dd6f4819D473226257792AFe230EC3c67f"
+	},
+	"optimism": {
+		"sendVersion": 2,
+		"receiveVersion": 2,
+		"inboundProofLibraryVersion": 1,
+		"inboundBlockConfirmations": 20,
+		"relayer": "0x81E792e5a9003CC1C8BF5569A00f34b65d75b017",
+		"outboundProofType": 1,
+		"outboundBlockConfirmations": 20,
+		"oracle": "0xA0Cc33Dd6f4819D473226257792AFe230EC3c67f"
+	},
+	"fantom": {
+		"sendVersion": 2,
+		"receiveVersion": 2,
+		"inboundProofLibraryVersion": 1,
+		"inboundBlockConfirmations": 5,
+		"relayer": "0x52EEA5c490fB89c7A0084B32FEAB854eefF07c82",
+		"outboundProofType": 1,
+		"outboundBlockConfirmations": 5,
+		"oracle": "0xA0Cc33Dd6f4819D473226257792AFe230EC3c67f"
+	}
+}
