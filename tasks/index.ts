@@ -1,11 +1,20 @@
+import { task, types } from "hardhat/config"
+
 // set the Oracle address for the OmniCounter
 // example:
-task("omniCounterSetOracle", "set the UA (an OmniCounter contract) to use the specified oracle for the destination chain", require("./omniCounterSetOracle"))
+task(
+    "omniCounterSetOracle",
+    "set the UA (an OmniCounter contract) to use the specified oracle for the destination chain",
+    require("./omniCounterSetOracle")
+)
     .addParam("targetNetwork", "the target network name, ie: fuji, or mumbai, etc (from hardhat.config.js)")
     .addParam("oracle", "the Oracle address for the specified targetNetwork")
 
 // get the Oracle for sending to the destination chain
-task("ocGetOracle", "get the Oracle address being used by the OmniCounter", require("./ocGetOracle")).addParam("targetNetwork", "the target network name, ie: fuji, or mumbai, etc (from hardhat.config.js)")
+task("ocGetOracle", "get the Oracle address being used by the OmniCounter", require("./ocGetOracle")).addParam(
+    "targetNetwork",
+    "the target network name, ie: fuji, or mumbai, etc (from hardhat.config.js)"
+)
 
 //
 task("ocPoll", "poll the counter of the OmniCounter", require("./ocPoll"))
@@ -106,7 +115,8 @@ task(
     "setTrustedRemote",
     "setTrustedRemote(chainId, sourceAddr) to enable inbound/outbound messages with your other contracts",
     require("./setTrustedRemote")
-).addParam("targetNetwork", "the target network to set as a trusted remote")
+)
+    .addParam("targetNetwork", "the target network to set as a trusted remote")
     .addOptionalParam("localContract", "Name of local contract if the names are different")
     .addOptionalParam("remoteContract", "Name of remote contract if the names are different")
     .addOptionalParam("contract", "If both contracts are the same name")
@@ -120,8 +130,7 @@ task("oftSend", "send tokens to another chain", require("./oftSend"))
     .addOptionalParam("contract", "If both contracts are the same name")
 
 //
-task("onftMint", "mint() mint ONFT", require("./onftMint"))
-    .addParam("contract", "Name of contract")
+task("onftMint", "mint() mint ONFT", require("./onftMint")).addParam("contract", "Name of contract")
 
 //
 task("ownerOf", "ownerOf(tokenId) to get the owner of a token", require("./ownerOf"))
@@ -137,8 +146,10 @@ task("onftSend", "send an ONFT nftId from one chain to another", require("./onft
     .addOptionalParam("contract", "If both contracts are the same name")
 
 //
-task("incrementCounter", "increment the destination OmniCounter", require("./incrementCounter"))
-    .addParam("targetNetwork", "the target network name, ie: fuji, or mumbai, etc (from hardhat.config.js)")
+task("incrementCounter", "increment the destination OmniCounter", require("./incrementCounter")).addParam(
+    "targetNetwork",
+    "the target network name, ie: fuji, or mumbai, etc (from hardhat.config.js)"
+)
 
 // npx hardhat deployWireCheck --e testnet --contract ExampleOFT --proxy-contract ExampleBasedOFT --proxy-chain optimism-kovan
 // npx hardhat deployWireCheck --e testnet --contract ExampleUniversalONFT721
@@ -147,3 +158,5 @@ task("deployWireCheck", "", require("./deployWireCheck"))
     .addParam("contract", "")
     .addOptionalParam("proxyChain", "")
     .addOptionalParam("proxyContract", "")
+
+task("setUserApplicationConfig", "sets User Application Config", require("./setUserApplicationConfig"))

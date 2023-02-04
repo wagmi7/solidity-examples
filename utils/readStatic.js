@@ -28,6 +28,14 @@ function getDeploymentAddresses(networkName) {
     return rtnAddresses
 }
 
+function getRpc(network) {
+    try {
+        return require("../hardhat.config").default.networks[network].url
+    } catch (e) {
+        throw `getRpc failed to get RPC URL for >> ${network} << -- do you REALLY have this network configured properly in hardhat.config.ts??`
+    }
+}
+
 module.exports = {
-    getDeploymentAddresses
+    getDeploymentAddresses, getRpc
 }
