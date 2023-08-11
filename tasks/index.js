@@ -161,8 +161,8 @@ task("deployWireCheck", "", require("./deployWireCheck"))
     .addOptionalParam("proxyChain", "")
     .addOptionalParam("proxyContract", "")
 
-task("verifyContract", "", require("./verifyContract.js"))
-    .addParam("contract", "contract name")
+// task("verifyContract", "", require("./verifyContract.js"))
+//     .addParam("contract", "contract name")
 
 //
 task("getStoredPayloadEvent", "Detect and clear stored payload", require('./getStoredPayloadEvent'))
